@@ -45,10 +45,3 @@ if ingredients_list:
         
         st.success('Your Smoothie is ordered '+name_on_order+'!', icon="✅")
 
-# Call the SmoothieFroot API
-smoothiefroot_response = requests.get(
-"https://my.smoothiefroot.com/api/fruit/watermelon"
-)
- 
-# Display API response
-st.text(smoothiefroot_response.text)
